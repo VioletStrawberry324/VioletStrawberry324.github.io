@@ -1,11 +1,41 @@
 body {
     color: white;
-    background-color: purple;
+    background-color: rgb(96, 0, 128);
 }
 
 #container {
     display: grid;
-    gap: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "a a"
+        "b c";
+
+    h1 {
+        letter-spacing: 7px;
+        font-variant: small-caps;
+    }
+
+    ul {
+        list-style-type:none;
+    }
+}
+
+#a {
+    grid-area: a;
+}
+
+#b {
+    grid-area: b;
+}
+
+#c {
+    img {
+        padding-left: 15px;
+        max-width: 100%;
+        max-height: 40%;
+    }
 }
 
 /* Classes */
@@ -22,4 +52,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.tiny {
+    font-size: 0.8em;
 }
