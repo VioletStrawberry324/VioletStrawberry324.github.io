@@ -1,9 +1,25 @@
 body {
-    background-color: purple;
     color: white;
+    background-color: purple;
 }
 
 #container {
+    display: grid;
+    gap: 10px;
+}
+
+/* Classes */
+
+.rmid {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cmid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
